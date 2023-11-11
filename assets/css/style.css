@@ -1,0 +1,222 @@
+/* section-name hover effect css starts here */
+
+#name{
+    text-decoration: none;
+    position: relative;
+    border: 2px solid transparent;
+    transition: border 0.3s ease-in-out;
+    cursor: pointer;
+}
+#name::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff9900;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+#name:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* section-name hover effect css ends here */
+
+
+/* section-about css starts here */
+
+.section-about{
+    padding-top: 50px;
+}
+.about-img{
+    height: 450px;
+    width: auto;
+}
+.section-about-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-item > a{
+    position: relative;
+}
+.nav-item > a::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 40px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff9900;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+.nav-item > a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.about-content{
+    width: 450px;
+    border: outset;
+    border-top: none;
+    border-left: none;
+    border-color: rgb(160, 12, 14);
+    padding: 40px;
+    background: linear-gradient(black,#a00c0e);
+}
+.about-content > h1{
+    font-size: 35px;
+}
+.about-content > article{
+    text-align: justify;
+}
+.about-content > h1,article{
+    background: linear-gradient(to right,rgba(177, 216, 213, 0.7),rgba(85, 160, 154, 0.7));
+    padding: 20px;
+}
+figcaption{
+    color: hsl(0, 0%, 100%);
+}
+
+/* section-about css ends here */
+
+
+/* section-background css starts here */
+
+.section-bg-heading{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 100px;
+}
+.section-bg-heading > span{
+    background: linear-gradient(to right, #8c7476, #592d31);
+    padding: 45px;
+    border-radius: 100%;
+}
+.section-bg-content{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+.bg-info-content{
+    background: linear-gradient(#8c7476, #592d31);
+    border: inset;
+    border-color: #8c7476;
+    width: 20em;
+    height: 28em;
+}
+.bg-info-content > ul{
+    padding: 15px;
+}
+.bg-list{
+    list-style-type: none;
+}
+.bg-list-item{
+    padding: 5px;
+}
+.bg-list-item > p{
+    padding: 15px;
+}
+.bg-list-item > details{
+    padding: 15px;
+    position: absolute;
+    width: 15.5em;
+    cursor: pointer;
+}
+.p1{
+    background: linear-gradient(to right, #efcbce, #b15e65);
+}
+.p2{
+    background: linear-gradient(to right, #fff, #d3c8c8);
+}
+
+/* section-background css ends here */
+
+
+/* section-career css starts here */
+
+.section-ca-heading{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 100px;
+}
+.section-ca-heading > span{
+    background: linear-gradient(#a3a3d1, #262652);
+    padding: 50px;
+    border-radius: 100rem;
+}
+.section-ca-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+.career-img{
+    height: 450px;
+    width: auto;
+}
+.ca-info-content{
+    background: linear-gradient(#6c6c99, #262652);
+    border: outset;
+    border-color: #262652;
+}
+.ca-list{
+    list-style-type: none;
+    padding: 30px;
+}
+.ca-list-item{
+    padding: 5px;
+}
+.ca-list-item p{
+    padding: 15px;
+}
+.p3{
+    background: linear-gradient(to right, #d4d4f0, #6e6ead);
+}
+.p4{
+    background: linear-gradient(to right, #eeeef2, #b8b8d3);
+}
+
+/* section-career css ends here */
+
+
+/* footer section css starts here */
+
+.footer{
+    padding-top: 100px;
+    padding-bottom: 50px; 
+}
+.container-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 35px;
+}
+.footer-icons{
+    background-color: #9c9cdb;
+    border-radius: 50px;
+}
+.social-media-icons-list > li{
+    list-style-type: none;
+    display: inline;
+    padding: 50px;
+}
+.img3{
+    height: 50px;
+    width: 200px;
+}
+.icon{
+    font-size: 25px;
+}
+.icon:hover{
+    color: #080832;
+}
+
+/* footer section css ends here */
